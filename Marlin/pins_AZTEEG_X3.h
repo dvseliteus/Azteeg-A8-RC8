@@ -31,13 +31,22 @@
 #define BOARD_NAME "Azteeg X3"
 
 #include "pins_RAMPS_13.h"
+//#undef  name_of_unwanted_signal_1
+#undef  FIL_RUNOUT_PIN_4
+#undef  SERVO2_PIN_5
+#undef  STAT_LED_BLUE_PIN_11
+#undef  LED_PIN_13
+
+#define E0_AUTO_FAN_PIN    4  //extruder 0 cooling fan
+#define FAN_PIN            5  //part cooling fan
+#define LED_PIN            11  //part cooling fan
 
 //
 // Servos
 //
 #undef SERVO0_PIN
 #undef SERVO1_PIN
-#define SERVO0_PIN  44  // SERVO1 port
+#define SERVO0_PIN  44  // SERVO1 port BLTouch Pin
 #define SERVO1_PIN  55  // SERVO2 port
 
 //
